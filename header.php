@@ -29,7 +29,7 @@
 	   	</div>
         <!-- la barre de recherche -->
         <div class="navsearch">
-        	<form id="search" method="post" action="search.php" >
+        	<form method="post" action="search.php" >
         		<input id="ip" type="text" name="search" placeholder="Rechercher sur le site" />
         		<input id="butt" type="submit" name="sub" value="Rechercher" />
         	</form>
@@ -50,7 +50,7 @@
 			<?php	
 			}
 						
-			if(isset($_POST["deconnection"]))
+		if(isset($_POST["deconnection"]))
 						{
 				
 							$_SESSION = array();
@@ -61,18 +61,16 @@
 					?>
 		</div>
 		<nav>
-					<ul id="menuglobal" >
-						<li id="menutitre1"><a href="index.php">Accueil</a></li>
-						<li id="menutitre2"><a href="peintres.php">Peintres</a></li>
-						<li id="menutitre3"><a href="mouvements.php">Mouvements</a></li>
-						<li id="menutitre4"><a href="themes.php">Themes</a></li>
-						<li id="menutitre5"><a href="compte.php">Ma Galerie</a></li>
-					</ul>
-				</nav>
-					<header>
-							<img id='background' src='images/background2.png' />
-					</header>
+			<ul id="menuglobal" >
+				<li id="menutitre1"><a href="index.php">Accueil</a></li>
+				<li id="menutitre2"><a href="peintres.php">Peintres</a></li>
+				<li id="menutitre3"><a href="mouvements.php">Mouvements</a></li>
+				<li id="menutitre4"><a href="themes.php">Themes</a></li>
+				<li id="menutitre5"><a href="compte.php">Ma Galerie</a></li>
+				</ul>
+		</nav>
+		<header>
+		<img id='background' src='images/background2.png' />
+		</header>
 
-					</body>
-					</html>
 		

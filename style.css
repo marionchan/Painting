@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: 'phat_ottoregular';
    
     font-weight: normal;
@@ -55,8 +55,6 @@ body
 	font-size: 3em;
 }
 
-
-
 #background
 {
 	width:100%;
@@ -104,7 +102,6 @@ nav
 {
 	margin-left: 80px;
 }
-
 
 h1
 {
@@ -510,9 +507,9 @@ article
 
 #search
 {
-	margin-top: 30px;
+	margin-top: 50px;
 	margin-left: 100px;
-	text-align: left;
+	text-align: right;
 }
 
 .navsearch {
@@ -527,7 +524,7 @@ article
 	font-size: 17px;
 	text-align: right;
 	margin-right: 50px;
-
+	float: right;
 }
 #assort
 {
