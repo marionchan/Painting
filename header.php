@@ -38,18 +38,19 @@
 			// test si la variable Superglobale SESSION (la personne est connecté) est vide ou pas, pour afficher le nom ou lui demander de se connecter
 			if (empty($_SESSION['login'])) 
 			{ ?>
-				<p id="searchbar"><a href='compte.php'><b>Mon Compte</b></a>
+				<span id="searchbar"><a href='compte.php'><b>Mon Compte</b></a>
 				<br /><a href='compte.php'>Créer un compte</a>
-				</p>
+				</span>
 			<?php }
 			else
 			{ ?>
-				<p id="searchbar"><a href='compte.php'><b><?php echo $_SESSION['name'] ?></b></a>
+				<span id="searchbar"><a href='compte.php'><b><?php echo $_SESSION['name'] ?></b></a>
 				<br />
-				</p>
-			<?php	}
+				</span>
+			<?php	
+			}
 						
-						if(isset($_POST["deconnection"]))
+			if(isset($_POST["deconnection"]))
 						{
 				
 							$_SESSION = array();
